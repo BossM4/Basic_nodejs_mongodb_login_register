@@ -21,7 +21,7 @@ const loginUserController = require('./controllers/loginUserController.js')
 const logoutController = require('./controllers/logoutController.js')
 const homeController = require('./controllers/homeController.js')
 
-//Middleware
+//Middlewares
 const redirectIfAuth = require('./middleware/redirectIfAuth.js')
 const authMiddleware = require('./middleware/authMiddleware.js')
 
@@ -48,7 +48,7 @@ app.get('/logout', logoutController)
 
 
 app.listen(4000, () => {
-    console.log("Application listening on port 4000")
+    console.log("Applications listening on port 4000")
 })
 
 
