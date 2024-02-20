@@ -4,6 +4,7 @@ const ejs =require('ejs')
 const mongoose = require('mongoose')
 const expressSession = require('express-session')
 const flash = require('connect-flash')
+const port = 4000;
 
 // MongoDB Connection
 mongoose.connect('mongodb+srv://admin:Ab12345678@cluster0.nf7eqr1.mongodb.net/?retryWrites=true&w=majority', {
@@ -47,8 +48,8 @@ app.post('/user/login', redirectIfAuth, loginUserController)
 app.get('/logout', logoutController)
 
 
-app.listen(4000, () => {
-    console.log("Applications listening on port 4000")
+app.listen(port, () => {
+    console.log(`Application listening on port : ${port}`)
 })
 
 
