@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
  - source: /
-   destination: /home/ec2-user/basic_nodejs_mongodb_login_register
+   destination: /home/ubuntu/basic_nodejs_mongodb_login_register
 hooks:
   ApplicationStop:
     - location: scripts/application_stop.sh
